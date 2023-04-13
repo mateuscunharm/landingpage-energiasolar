@@ -2,26 +2,221 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 0;
 }
 
 .container {
   background-color: #f4f4f4;
-  border: 5px solid red;
-  display: grid;
+  /* border: 5px solid red; */
+  display: flex;
+  flex-direction: column;
 }
 
-.container section {
-  border: 2px solid blue;
-  padding: 10px;
-}
 .section-main {
   background-image: url(assets/paineis-solares.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+  padding: 150px 200px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 2rem;
 }
 
 .header img {
-  width: 180px;
+  width: 10rem;
+}
+
+.section-main h1 {
+  /* border: 1px solid red; */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 115%;
+  letter-spacing: -0.02em;
+  width: 485px;
+  color: #f4f4f4;
+}
+
+.form-area {
+  background-color: #f4f4f4;
+  border-radius: 32px;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 30px 70px;
+}
+
+.form-area h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 115%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  width: 375px;
+  color: #122e56;
+}
+
+.form-field form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-field-input {
+  padding: 8px 10px;
+  border: 1px solid #122e56;
+  border-width: 1px;
+  border-radius: 5px;
+  height: 2.5rem;
+  width: 24rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 115%;
+  letter-spacing: -0.02em;
+  color: #122e56;
+}
+
+.form-name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 115%;
+  letter-spacing: -0.02em;
+
+  color: #122e56;
+}
+
+#button-form {
+  margin-top: 20px;
+}
+.button-style {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 115%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #122e56;
+
+  background: #f4c700;
+  border-radius: 100px;
+  padding: 15px 50px;
+  width: 384px;
+}
+
+.button-style:hover,
+.button-style:focus {
+  color: #f4c700;
+  background: #122e56;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.section-financing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  align-items: center;
+}
+.financing {
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.financing-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.financing-texts p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 115%;
+  letter-spacing: 0.04em;
+
+  color: #122e56;
+}
+
+.financing-texts h2 {
+  width: 33rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 115%;
+  letter-spacing: -0.02em;
+
+  color: #122e56;
+}
+
+.financing-texts span {
+  width: 31rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: -0.02em;
+
+  color: #122e56;
+}
+
+.financing-logo-banks {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 30rem;
+  gap: 30px;
+}
+
+#logo-caixa {
+  width: 120px;
+  flex-shrink: 0;
+}
+
+#logo-bv {
+  width: 60px;
+}
+
+#logo-bb {
+  width: 200px;
+}
+
+#logo-santander {
+  width: 160px;
+}
+
+#logo-btg-pactual {
+  width: 120px;
+}
+
+#logo-cashme {
+  width: 120px;
 }
